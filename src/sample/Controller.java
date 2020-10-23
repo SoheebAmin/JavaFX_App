@@ -11,10 +11,14 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable{
 
+
+    // Elements for the test checkboxes.
     @FXML private Label theLabel;
     @FXML private CheckBox firstbox;
     @FXML private CheckBox secondbox;
     @FXML private CheckBox thirdbox;
+
+    // The button to open a new scene (aka "window")
 
     public void runClicked(){
         String checked = "The checkboxes selected are:";
