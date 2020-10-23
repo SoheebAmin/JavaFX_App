@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
@@ -10,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sampleJavaFX.entrySceneController">
+<GridPane alignment="center" hgap="10" prefHeight="339.0" prefWidth="375.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sampleJavaFX.entrySceneController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -24,7 +24,7 @@
    <children>
       <AnchorPane fx:id="theBox" prefHeight="600.0" prefWidth="800.0">
          <children>
-            <VBox fx:id="Pick" layoutX="126.0" layoutY="121.0" prefHeight="321.0" prefWidth="266.0" spacing="10.0">
+            <VBox fx:id="Pick" layoutX="4.0" prefHeight="256.0" prefWidth="180.0" spacing="10.0">
                <children>
                   <Label prefHeight="26.0" prefWidth="130.0" text="Check Boxes">
                      <font>
@@ -37,7 +37,11 @@
                   <Button fx:id="runBtn" mnemonicParsing="false" onAction="#runClicked" text="Run" />
                   <Label fx:id="theLabel" text="Label" />
                </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
             </VBox>
+            <Button layoutX="206.0" layoutY="147.0" mnemonicParsing="false" onAction="#changeToSecondScene" text="Second Scene" />
          </children>
       </AnchorPane>
    </children>
