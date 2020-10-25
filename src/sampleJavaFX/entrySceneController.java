@@ -42,11 +42,12 @@ public class entrySceneController implements Initializable{
     /* The all important code that actually allows us to change to a different scene! */
 
     public void changeToSecondScene(ActionEvent event) throws IOException {
+        // gets the scene to load and sets it in a variable
         Parent secondSceneParent = FXMLLoader.load(getClass().getResource(("secondScene.fxml")));
         Scene secondSceneScene = new Scene(secondSceneParent);
 
+        // sets new scene into the window
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();   // need this to get the stage info
-
         window.setScene(secondSceneScene);
         window.show();
 
